@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Droplets, Phone, MapPin, Facebook, Instagram } from "lucide-react";
 
-const PHONE = "(682) 555-0147";
-const PHONE_HREF = "tel:+16825550147";
+const PHONE = "(817) 852-9498";
+const PHONE_HREF = "tel:+1(817) 852-9498";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
