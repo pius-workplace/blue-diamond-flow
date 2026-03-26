@@ -2,8 +2,8 @@ import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
-const PHONE_HREF = "tel:+16825550147";
-const PHONE = "(682) 555-0147";
+const PHONE_HREF = "tel:+1 (817) 852-9498";
+const PHONE = "(817) 852-9498";
 
 const CTASection = () => (
   <section className="section-padding bg-primary text-primary-foreground">
