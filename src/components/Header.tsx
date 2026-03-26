@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Phone, Menu, X, Droplets } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const PHONE = "(682) 555-0147";
-const PHONE_HREF = "tel:+16825550147";
+const PHONE = "+1(817) 852-9498";
+const PHONE_HREF = "tel:+1(817) 852-9498";
 
 const navLinks = [
   { label: "Home", to: "/" },
