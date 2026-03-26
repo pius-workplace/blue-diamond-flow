@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Clock } from "lucide-react";
 import { toast } from "sonner";
 
-const PHONE = "(682) 555-0147";
-const PHONE_HREF = "tel:+16825550147";
+const PHONE = "(817) 852-9498";
+const PHONE_HREF = "tel:+1 (817) 852-9498";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", phone: "", service: "", message: "" });
