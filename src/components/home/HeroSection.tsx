@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-plumbing.jpg";
 
-const PHONE_HREF = "tel:+16825550147";
-const PHONE = "(682) 555-0147";
+const PHONE_HREF = "tel:+1 (817) 852-9498";
+const PHONE = "(817) 852-9498";
 
 const HeroSection = () => (
   <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
