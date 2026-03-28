@@ -3,29 +3,34 @@ import { AnimateOnScroll, StaggerContainer, StaggerItem } from "@/components/Ani
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
+const team1ImageSrc = new URL("../../assets/gallery/profile.jpg", import.meta.url).href;
+const team2ImageSrc = new URL("../../assets/gallery/profile 1.jpg", import.meta.url).href;
+const team3ImageSrc = new URL("../../assets/gallery/profile 3 women.jpg", import.meta.url).href;
+const team4ImageSrc = new URL("../../assets/gallery/profile 4 women.jpg", import.meta.url).href;
+
 const teamMembers = [
   {
     name: "John Smith",
     role: "Master Plumber",
-    image: "/src/assets/team-1.jpg",
+    image: team1ImageSrc,
     bio: "30+ years experience in residential and commercial plumbing.",
   },
   {
     name: "Sarah Johnson",
     role: "Service Manager",
-    image: "/src/assets/team-2.jpg", 
+    image: team2ImageSrc,
     bio: "Coordinates our 24/7 emergency response team.",
   },
   {
     name: "Mike Davis",
     role: "Lead Technician",
-    image: "/src/assets/team-3.jpg",
+    image: team3ImageSrc,
     bio: "Specializes in water heater installation and repair.",
   },
   {
     name: "Lisa Chen",
     role: "Customer Service Lead",
-    image: "/src/assets/team-4.jpg",
+    image: team4ImageSrc,
     bio: "Handles scheduling and ensures 5-star customer experience.",
   },
 ];
@@ -44,9 +49,9 @@ const TeamSection = () => (
         </div>
       </AnimateOnScroll>
 
-      <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {teamMembers.map((member) => (
-          <StaggerItem key={member.name} >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {teamMembers.map((member, index) => (
+          <AnimateOnScroll variant="fadeUp" key={index}>
 
             <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-card/80 backdrop-blur-sm">
               <CardHeader className="text-center pb-2">
@@ -69,9 +74,9 @@ const TeamSection = () => (
                 </p>
               </CardContent>
             </Card>
-          </StaggerItem>
+          </AnimateOnScroll>
         ))}
-      </StaggerContainer>
+      </div>
     </div>
   </section>
 );

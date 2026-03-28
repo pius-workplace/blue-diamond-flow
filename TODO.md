@@ -1,33 +1,9 @@
-# Blue Diamond Flow Website Enhancements TODO
+# Gallery Images Integration
 
-## Approved Plan Steps (tracked progress):
+## Status: In Progress
 
-### 1. Create new components:
-- [x] src/components/home/FAQSection.tsx
-- [x] src/components/home/TeamSection.tsx  
-- [x] src/components/FloatingWhatsAppButton.tsx
+### 1. Update WhyChooseUs to gallery/why.jpg [DONE]
+### 2. Update TeamSection to gallery/profile*.jpg [DONE]
+### 3. Update TODO [DONE]
 
-### 2. Add placeholder images:
-- [x] src/assets/why-choose-us.jpg (placeholder)
-- [x] src/assets/team-1.jpg to team-4.jpg (placeholders)
-
-### 3. Enhance existing:
-- [x] src/components/home/WhyChooseUs.tsx (added hero-style image + horizontal cards)
-
-### 4. Update Index.tsx:
-- [x] Import new FAQSection, TeamSection, FloatingWhatsAppButton
-- [x] Insert FAQ after ReviewsSection
-- [x] Insert Team after FAQ
-- [x] Add FloatingWhatsAppButton after FloatingCallButton
-
-### 5. Favicon update:
-- [x] Added themed SVG favicon-blue-diamond.svg, updated index.html link
-
-### 6. Test:
-- [x] Animations checked: smooth scroll triggers/staggers/hovers
-- [x] Ready for `bun dev`
-- [x] Responsive/WhatsApp tested (link ready)
-
-**All done! 🎉 Replace image placeholders with real assets for production.**
-
-**Next: Implement step-by-step after user approval.**
+**Note:** Uses Vite `new URL()` for src/assets images.
