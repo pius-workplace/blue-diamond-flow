@@ -2,6 +2,8 @@ import React from "react";
 import { Zap, Award, DollarSign, ThumbsUp } from "lucide-react";
 import { AnimateOnScroll, StaggerContainer, StaggerItem } from "@/components/AnimateOnScroll";
 
+const whyImageSrc = new URL("../../assets/gallery/why.jpg", import.meta.url).href;
+
 const reasons = [
   { icon: Zap, title: "Fast Response Times", desc: "We arrive quickly so your plumbing issue doesn't become a disaster." },
   { icon: Award, title: "Certified Technicians", desc: "Experienced, licensed professionals you can count on." },
@@ -25,7 +27,7 @@ const WhyChooseUs = () => (
         <AnimateOnScroll variant="scaleIn" delay={0.2}>
           <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="/src/assets/why-choose-us.jpg" 
+  src={whyImageSrc}
               alt="Why choose Blue Diamond Plumbing" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -39,9 +41,10 @@ const WhyChooseUs = () => (
 
         {/* Features side */}
         <div>
-          <StaggerContainer className="space-y-4">
-            {reasons.map((r) => (
-              <StaggerItem key={r.title}>
+          <div className="space-y-4">
+            {reasons.map((r, index) => (
+              <AnimateOnScroll variant="fadeUp" key={index}>
+
                 <div className="flex gap-4 p-4 hover:bg-background/50 rounded-xl transition-all group">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center flex-shrink-0">
                     <r.icon className="h-6 w-6 text-primary" />
@@ -51,9 +54,9 @@ const WhyChooseUs = () => (
                     <p className="text-muted-foreground">{r.desc}</p>
                   </div>
                 </div>
-              </StaggerItem>
+              </AnimateOnScroll>
             ))}
-          </StaggerContainer>
+          </div>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const FloatingWhatsAppButton = () => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    className="fixed bottom-6 right-6 lg:bottom-8 lg:right-12 z-50 md:flex hidden"
+    className="fixed bottom-6 right-6 lg:bottom-8 lg:right-12 z-50 flex"
   >
     <Button 
       asChild 
